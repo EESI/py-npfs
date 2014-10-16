@@ -4,6 +4,8 @@ Python implementation of NPFS. It is still under development and is not consider
 
 There are types of feature subset selection problems that require that the size of the subset be specied prior to running the selection algorithm. NPFS works with the decisions of a base subset selection algorithm to determine an appropriate number of features to select given an initial starting point. NPFS uses the FEAST feature selection toolbox; however, the approach is not limited to using the this toolbox. 
 
+Make sure that if you are loading the data from a file and converting the data to a `numpy` array that you set `order="F"`. This is very important.
+
 # Module Installation 
 
 ```bash
